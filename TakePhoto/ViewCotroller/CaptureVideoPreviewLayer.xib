@@ -16,14 +16,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSI-yF-oMK">
-                    <rect key="frame" x="20" y="70" width="280" height="438"/>
+                    <rect key="frame" x="20" y="100" width="280" height="368"/>
                     <color key="backgroundColor" red="0.93333333330000001" green="0.2470588235" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="JSI-yF-oMK" secondAttribute="bottom" constant="60" id="9fT-DE-ned"/>
-                <constraint firstItem="JSI-yF-oMK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="Ct1-O4-Aoq"/>
+                <constraint firstAttribute="bottom" secondItem="JSI-yF-oMK" secondAttribute="bottom" constant="100" id="9fT-DE-ned"/>
+                <constraint firstItem="JSI-yF-oMK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Ct1-O4-Aoq"/>
                 <constraint firstAttribute="trailing" secondItem="JSI-yF-oMK" secondAttribute="trailing" constant="20" id="mM7-Tq-Yfe"/>
                 <constraint firstItem="JSI-yF-oMK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="wlR-Kl-B67"/>
             </constraints>
