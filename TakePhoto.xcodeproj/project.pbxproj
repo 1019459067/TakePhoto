@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		56DACDD11B79F15000BE26D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDD01B79F15000BE26D9 /* main.m */; };
-		56DACDD41B79F15000BE26D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDD31B79F15000BE26D9 /* AppDelegate.m */; };
-		56DACDD71B79F15000BE26D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDD61B79F15000BE26D9 /* ViewController.m */; };
 		56DACDDA1B79F15000BE26D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DACDD81B79F15000BE26D9 /* Main.storyboard */; };
 		56DACDDC1B79F15000BE26D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DACDDB1B79F15000BE26D9 /* Images.xcassets */; };
 		56DACDDF1B79F15000BE26D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DACDDD1B79F15000BE26D9 /* LaunchScreen.xib */; };
 		56DACDEB1B79F15000BE26D9 /* TakePhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDEA1B79F15000BE26D9 /* TakePhotoTests.m */; };
+		56DACE2C1B79F5CB00BE26D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE281B79F5CB00BE26D9 /* AppDelegate.m */; };
+		56DACE2D1B79F5CB00BE26D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE2B1B79F5CB00BE26D9 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +30,16 @@
 		56DACDCB1B79F15000BE26D9 /* TakePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DACDCF1B79F15000BE26D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56DACDD01B79F15000BE26D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		56DACDD21B79F15000BE26D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		56DACDD31B79F15000BE26D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56DACDD51B79F15000BE26D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56DACDD61B79F15000BE26D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		56DACDD91B79F15000BE26D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56DACDDB1B79F15000BE26D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		56DACDDE1B79F15000BE26D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		56DACDE41B79F15000BE26D9 /* TakePhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakePhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DACDE91B79F15000BE26D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56DACDEA1B79F15000BE26D9 /* TakePhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakePhotoTests.m; sourceTree = "<group>"; };
+		56DACE271B79F5CB00BE26D9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56DACE281B79F5CB00BE26D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56DACE2A1B79F5CB00BE26D9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56DACE2B1B79F5CB00BE26D9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,8 @@
 		56DACDCD1B79F15000BE26D9 /* TakePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				56DACDD21B79F15000BE26D9 /* AppDelegate.h */,
-				56DACDD31B79F15000BE26D9 /* AppDelegate.m */,
-				56DACDD51B79F15000BE26D9 /* ViewController.h */,
-				56DACDD61B79F15000BE26D9 /* ViewController.m */,
+				56DACE261B79F5CB00BE26D9 /* Main */,
+				56DACE291B79F5CB00BE26D9 /* ViewCotroller */,
 				56DACDD81B79F15000BE26D9 /* Main.storyboard */,
 				56DACDDB1B79F15000BE26D9 /* Images.xcassets */,
 				56DACDDD1B79F15000BE26D9 /* LaunchScreen.xib */,
@@ -117,6 +115,24 @@
 				56DACDE91B79F15000BE26D9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56DACE261B79F5CB00BE26D9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				56DACE271B79F5CB00BE26D9 /* AppDelegate.h */,
+				56DACE281B79F5CB00BE26D9 /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		56DACE291B79F5CB00BE26D9 /* ViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				56DACE2A1B79F5CB00BE26D9 /* ViewController.h */,
+				56DACE2B1B79F5CB00BE26D9 /* ViewController.m */,
+			);
+			path = ViewCotroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56DACDD71B79F15000BE26D9 /* ViewController.m in Sources */,
-				56DACDD41B79F15000BE26D9 /* AppDelegate.m in Sources */,
+				56DACE2C1B79F5CB00BE26D9 /* AppDelegate.m in Sources */,
 				56DACDD11B79F15000BE26D9 /* main.m in Sources */,
+				56DACE2D1B79F5CB00BE26D9 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +434,7 @@
 				56DACDF01B79F15000BE26D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56DACDF11B79F15000BE26D9 /* Build configuration list for PBXNativeTarget "TakePhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				56DACDF31B79F15000BE26D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

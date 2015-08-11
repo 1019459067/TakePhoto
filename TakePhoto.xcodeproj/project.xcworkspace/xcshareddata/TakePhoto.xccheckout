@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1D1AD9C2-2B3A-4C6E-A54D-2A4DCADEFC05</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TakePhoto</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39CE93C177E28865A7A1207795C59CE0AB60756D</key>
+		<string>https://github.com/Eternity921020/showOrhideNavBar.git</string>
+		<key>863D6644C79F55CE4670E8374CA7CFB725A27244</key>
+		<string>https://github.com/Eternity921020/TakePhoto.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TakePhoto.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39CE93C177E28865A7A1207795C59CE0AB60756D</key>
+		<string>../../..</string>
+		<key>863D6644C79F55CE4670E8374CA7CFB725A27244</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Eternity921020/TakePhoto.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>863D6644C79F55CE4670E8374CA7CFB725A27244</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39CE93C177E28865A7A1207795C59CE0AB60756D</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>863D6644C79F55CE4670E8374CA7CFB725A27244</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TakePhoto</string>
+		</dict>
+	</array>
+</dict>
+</plist>
