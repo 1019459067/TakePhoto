@@ -14,6 +14,8 @@
 		56DACDEB1B79F15000BE26D9 /* TakePhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDEA1B79F15000BE26D9 /* TakePhotoTests.m */; };
 		56DACE2C1B79F5CB00BE26D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE281B79F5CB00BE26D9 /* AppDelegate.m */; };
 		56DACE2D1B79F5CB00BE26D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE2B1B79F5CB00BE26D9 /* ViewController.m */; };
+		56DACE311B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE2F1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m */; };
+		56DACE321B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DACE301B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		56DACE281B79F5CB00BE26D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		56DACE2A1B79F5CB00BE26D9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		56DACE2B1B79F5CB00BE26D9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56DACE2E1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureVideoPreviewLayer.h; sourceTree = "<group>"; };
+		56DACE2F1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureVideoPreviewLayer.m; sourceTree = "<group>"; };
+		56DACE301B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureVideoPreviewLayer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +136,9 @@
 			children = (
 				56DACE2A1B79F5CB00BE26D9 /* ViewController.h */,
 				56DACE2B1B79F5CB00BE26D9 /* ViewController.m */,
+				56DACE2E1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.h */,
+				56DACE2F1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m */,
+				56DACE301B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib */,
 			);
 			path = ViewCotroller;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 				56DACDDA1B79F15000BE26D9 /* Main.storyboard in Resources */,
 				56DACDDF1B79F15000BE26D9 /* LaunchScreen.xib in Resources */,
 				56DACDDC1B79F15000BE26D9 /* Images.xcassets in Resources */,
+				56DACE321B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +247,7 @@
 				56DACE2C1B79F5CB00BE26D9 /* AppDelegate.m in Sources */,
 				56DACDD11B79F15000BE26D9 /* main.m in Sources */,
 				56DACE2D1B79F5CB00BE26D9 /* ViewController.m in Sources */,
+				56DACE311B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

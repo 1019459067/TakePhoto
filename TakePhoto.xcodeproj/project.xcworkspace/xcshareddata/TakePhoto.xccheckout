@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1D1AD9C2-2B3A-4C6E-A54D-2A4DCADEFC05</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TakePhoto</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>39CE93C177E28865A7A1207795C59CE0AB60756D</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/Eternity921020/TakePhoto.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TakePhoto.xcodeproj</string>
+	<string>TakePhoto.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>39CE93C177E28865A7A1207795C59CE0AB60756D</key>
