@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AVFoundation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <constraint firstAttribute="bottom" secondItem="jEo-SB-RHo" secondAttribute="bottom" id="k8c-hn-5Sw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="f6p-4E-fmy"/>
+                    <navigationItem key="navigationItem" title="AVFoundation" id="f6p-4E-fmy"/>
                     <connections>
                         <outlet property="tableView" destination="jEo-SB-RHo" id="Sph-ef-al4"/>
                     </connections>

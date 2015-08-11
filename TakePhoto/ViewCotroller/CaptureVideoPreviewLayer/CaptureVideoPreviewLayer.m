@@ -57,6 +57,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"CaptureVideoPreviewLayer";
     
     [self.captureSession beginConfiguration];
     //4、输出设备

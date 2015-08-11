@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CaptureVideoPreviewLayer.h"
+#import "CaptureStillImageOutput.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.arrData = @[@"AVCaptureVideoPreviewLayer"];
+    self.arrData = @[@"AVCaptureVideoPreviewLayer",@"CaptureStillImageOutput"];
     [self clipExtraCellLine:self.tableView];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -44,6 +45,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         CaptureVideoPreviewLayer *vc = [[CaptureVideoPreviewLayer alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 1) {
+        CaptureStillImageOutput *vc = [[CaptureStillImageOutput alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5614FDFC1B7A351B0030DB48 /* CaptureStillImageOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614FDF31B7A351B0030DB48 /* CaptureStillImageOutput.m */; };
+		5614FDFD1B7A351B0030DB48 /* CaptureStillImageOutput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5614FDF41B7A351B0030DB48 /* CaptureStillImageOutput.xib */; };
+		5614FDFE1B7A351B0030DB48 /* CaptureVideoPreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614FDF71B7A351B0030DB48 /* CaptureVideoPreviewLayer.m */; };
+		5614FDFF1B7A351B0030DB48 /* CaptureVideoPreviewLayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5614FDF81B7A351B0030DB48 /* CaptureVideoPreviewLayer.xib */; };
+		5614FE001B7A351B0030DB48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614FDFB1B7A351B0030DB48 /* ViewController.m */; };
 		56DACDD11B79F15000BE26D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDD01B79F15000BE26D9 /* main.m */; };
 		56DACDDA1B79F15000BE26D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DACDD81B79F15000BE26D9 /* Main.storyboard */; };
 		56DACDDC1B79F15000BE26D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DACDDB1B79F15000BE26D9 /* Images.xcassets */; };
 		56DACDDF1B79F15000BE26D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DACDDD1B79F15000BE26D9 /* LaunchScreen.xib */; };
 		56DACDEB1B79F15000BE26D9 /* TakePhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACDEA1B79F15000BE26D9 /* TakePhotoTests.m */; };
 		56DACE2C1B79F5CB00BE26D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE281B79F5CB00BE26D9 /* AppDelegate.m */; };
-		56DACE2D1B79F5CB00BE26D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE2B1B79F5CB00BE26D9 /* ViewController.m */; };
-		56DACE311B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DACE2F1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m */; };
-		56DACE321B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DACE301B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5614FDF21B7A351B0030DB48 /* CaptureStillImageOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureStillImageOutput.h; sourceTree = "<group>"; };
+		5614FDF31B7A351B0030DB48 /* CaptureStillImageOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureStillImageOutput.m; sourceTree = "<group>"; };
+		5614FDF41B7A351B0030DB48 /* CaptureStillImageOutput.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureStillImageOutput.xib; sourceTree = "<group>"; };
+		5614FDF61B7A351B0030DB48 /* CaptureVideoPreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureVideoPreviewLayer.h; sourceTree = "<group>"; };
+		5614FDF71B7A351B0030DB48 /* CaptureVideoPreviewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureVideoPreviewLayer.m; sourceTree = "<group>"; };
+		5614FDF81B7A351B0030DB48 /* CaptureVideoPreviewLayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureVideoPreviewLayer.xib; sourceTree = "<group>"; };
+		5614FDFA1B7A351B0030DB48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5614FDFB1B7A351B0030DB48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		56DACDCB1B79F15000BE26D9 /* TakePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DACDCF1B79F15000BE26D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56DACDD01B79F15000BE26D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,11 +50,6 @@
 		56DACDEA1B79F15000BE26D9 /* TakePhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakePhotoTests.m; sourceTree = "<group>"; };
 		56DACE271B79F5CB00BE26D9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56DACE281B79F5CB00BE26D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56DACE2A1B79F5CB00BE26D9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56DACE2B1B79F5CB00BE26D9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		56DACE2E1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureVideoPreviewLayer.h; sourceTree = "<group>"; };
-		56DACE2F1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureVideoPreviewLayer.m; sourceTree = "<group>"; };
-		56DACE301B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureVideoPreviewLayer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5614FDF11B7A351B0030DB48 /* CaptureStillImageOutput */ = {
+			isa = PBXGroup;
+			children = (
+				5614FDF21B7A351B0030DB48 /* CaptureStillImageOutput.h */,
+				5614FDF31B7A351B0030DB48 /* CaptureStillImageOutput.m */,
+				5614FDF41B7A351B0030DB48 /* CaptureStillImageOutput.xib */,
+			);
+			path = CaptureStillImageOutput;
+			sourceTree = "<group>";
+		};
+		5614FDF51B7A351B0030DB48 /* CaptureVideoPreviewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5614FDF61B7A351B0030DB48 /* CaptureVideoPreviewLayer.h */,
+				5614FDF71B7A351B0030DB48 /* CaptureVideoPreviewLayer.m */,
+				5614FDF81B7A351B0030DB48 /* CaptureVideoPreviewLayer.xib */,
+			);
+			path = CaptureVideoPreviewLayer;
+			sourceTree = "<group>";
+		};
+		5614FDF91B7A351B0030DB48 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5614FDFA1B7A351B0030DB48 /* ViewController.h */,
+				5614FDFB1B7A351B0030DB48 /* ViewController.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
 		56DACDC21B79F15000BE26D9 = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +168,9 @@
 		56DACE291B79F5CB00BE26D9 /* ViewCotroller */ = {
 			isa = PBXGroup;
 			children = (
-				56DACE2A1B79F5CB00BE26D9 /* ViewController.h */,
-				56DACE2B1B79F5CB00BE26D9 /* ViewController.m */,
-				56DACE2E1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.h */,
-				56DACE2F1B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m */,
-				56DACE301B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib */,
+				5614FDF11B7A351B0030DB48 /* CaptureStillImageOutput */,
+				5614FDF51B7A351B0030DB48 /* CaptureVideoPreviewLayer */,
+				5614FDF91B7A351B0030DB48 /* RootViewController */,
 			);
 			path = ViewCotroller;
 			sourceTree = "<group>";
@@ -224,9 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56DACDDA1B79F15000BE26D9 /* Main.storyboard in Resources */,
+				5614FDFF1B7A351B0030DB48 /* CaptureVideoPreviewLayer.xib in Resources */,
 				56DACDDF1B79F15000BE26D9 /* LaunchScreen.xib in Resources */,
 				56DACDDC1B79F15000BE26D9 /* Images.xcassets in Resources */,
-				56DACE321B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.xib in Resources */,
+				5614FDFD1B7A351B0030DB48 /* CaptureStillImageOutput.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,8 +279,9 @@
 			files = (
 				56DACE2C1B79F5CB00BE26D9 /* AppDelegate.m in Sources */,
 				56DACDD11B79F15000BE26D9 /* main.m in Sources */,
-				56DACE2D1B79F5CB00BE26D9 /* ViewController.m in Sources */,
-				56DACE311B79F9BB00BE26D9 /* CaptureVideoPreviewLayer.m in Sources */,
+				5614FE001B7A351B0030DB48 /* ViewController.m in Sources */,
+				5614FDFE1B7A351B0030DB48 /* CaptureVideoPreviewLayer.m in Sources */,
+				5614FDFC1B7A351B0030DB48 /* CaptureStillImageOutput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
