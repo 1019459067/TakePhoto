@@ -52,9 +52,13 @@
     return _captureSession;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.captureVideoPreviewLayer.frame = self.viewContrainer.bounds;
+    [self.viewContrainer.layer addSublayer:self.captureVideoPreviewLayer];
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
     //4、输出设备
     NSError *error = nil;
     AVCaptureDeviceInput *captureDeviceInput = [[AVCaptureDeviceInput alloc]initWithDevice:self.captureDevice error:&error];
@@ -65,9 +69,6 @@
     if ([self.captureSession canAddInput:captureDeviceInput]) {
         [self.captureSession addInput:captureDeviceInput];
     }
-    
-    self.captureVideoPreviewLayer.frame = self.viewContrainer.bounds;
-    [self.viewContrainer.layer addSublayer:self.captureVideoPreviewLayer];
     
     [self.captureSession commitConfiguration];
     [self.captureSession startRunning];
