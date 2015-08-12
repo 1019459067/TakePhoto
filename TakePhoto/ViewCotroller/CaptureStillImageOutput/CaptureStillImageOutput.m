@@ -11,6 +11,7 @@
 
 @interface CaptureStillImageOutput ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *viewContrainer;
+@property (weak, nonatomic) IBOutlet UIButton *btnTakePhoto;
 
 @property (nonatomic, strong)AVCaptureDevice *captureDevice;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
@@ -68,6 +69,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"CaptureStillImageOutput";
+    
     [self.captureSession beginConfiguration];
     //4、输出设备
     NSError *error = nil;
@@ -82,44 +84,48 @@
     if ([self.captureSession canAddOutput:self.captureStillImageOutput]) {
         [self.captureSession addOutput:self.captureStillImageOutput];
     }
-
+    
     [self.captureSession commitConfiguration];
     [self.captureSession startRunning];
 }
 - (IBAction)onBtnTakePhoto:(UIButton *)sender {
-    AVCaptureConnection *captureConnection = [self.captureStillImageOutput connectionWithMediaType:AVMediaTypeVideo];
-    if (captureConnection) {
-        [self.captureStillImageOutput
-         captureStillImageAsynchronouslyFromConnection:captureConnection
-         completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
-             if (imageDataSampleBuffer) {
-                 NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
-                 UIImage *image = [[UIImage alloc] initWithData:imageData];
-                 if ([self.captureSession isRunning]) {
-                     [self.captureSession stopRunning];
-                 }
-                 //save photo to album
-                 UIImageWriteToSavedPhotosAlbum(image, self, NULL, NULL);
-
-                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                     UILabel *noteLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, self.view.frame.size.width * 0.5 + 20, self.view.frame.size.width - 100 *2, 30)];
-                     noteLabel.backgroundColor = [UIColor blackColor];
-                     noteLabel.alpha = 1;
-                     noteLabel.textColor = [UIColor whiteColor];
-                     noteLabel.textAlignment = NSTextAlignmentCenter;
-                     noteLabel.font = [UIFont systemFontOfSize:15.0f];
-                     noteLabel.text = @"保存图片成功";
-                     [self.view addSubview:noteLabel];
+    if (!sender.selected) {
+        
+        AVCaptureConnection *captureConnection = [self.captureStillImageOutput connectionWithMediaType:AVMediaTypeVideo];
+        if (captureConnection) {
+            [self.captureStillImageOutput
+             captureStillImageAsynchronouslyFromConnection:captureConnection
+             completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+                 if (imageDataSampleBuffer) {
+                     NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+                     UIImage *image = [[UIImage alloc] initWithData:imageData];
+                     //save photo to album
+                     UIImageWriteToSavedPhotosAlbum(image, self, NULL, NULL);
                      
-                     [UIView animateWithDuration:2.0 animations:^{
-                         noteLabel.alpha = 0;
-                     }completion:^(BOOL finished) {
-                         [noteLabel removeFromSuperview];
-                     }];
-                 });
-
-             }
-         }];
+                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                         UILabel *noteLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, self.view.frame.size.width * 0.5 + 20, self.view.frame.size.width - 100 *2, 30)];
+                         noteLabel.backgroundColor = [UIColor blackColor];
+                         noteLabel.alpha = 1;
+                         noteLabel.textColor = [UIColor whiteColor];
+                         noteLabel.textAlignment = NSTextAlignmentCenter;
+                         noteLabel.font = [UIFont systemFontOfSize:15.0f];
+                         noteLabel.text = @"保存图片成功";
+                         [self.view addSubview:noteLabel];
+                         
+                         [UIView animateWithDuration:2.0 animations:^{
+                             noteLabel.alpha = 0;
+                         }completion:^(BOOL finished) {
+                             [noteLabel removeFromSuperview];
+                         }];
+                     });
+                 }
+             }];
+        }
+        sender.selected = YES;
+        [self.captureSession stopRunning];
+    }else {
+        sender.selected = NO;
+        [self.captureSession startRunning];
     }
 }
 @end

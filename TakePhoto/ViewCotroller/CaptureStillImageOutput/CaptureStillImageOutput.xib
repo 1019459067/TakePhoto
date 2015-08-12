@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CaptureStillImageOutput">
             <connections>
+                <outlet property="btnTakePhoto" destination="xqi-Pf-6xV" id="5sf-I7-v2S"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewContrainer" destination="0PW-Nw-m7h" id="cCs-Tv-1PR"/>
             </connections>
@@ -18,18 +19,17 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PW-Nw-m7h">
                     <rect key="frame" x="20" y="70" width="280" height="418"/>
-                    <color key="backgroundColor" red="0.93333333330000001" green="0.2470588235" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqi-Pf-6xV">
                     <rect key="frame" x="135" y="508" width="50" height="50"/>
-                    <color key="backgroundColor" red="0.086274509799999996" green="0.6705882353" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Sp6-FO-zFz"/>
                         <constraint firstAttribute="width" secondItem="xqi-Pf-6xV" secondAttribute="height" multiplier="1:1" id="qIV-dm-edW"/>
                     </constraints>
-                    <state key="normal" title="拍照">
+                    <state key="normal" title="拍照" backgroundImage="Btn-Cam">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" title="重拍" backgroundImage="Btn-Cam_press"/>
                     <connections>
                         <action selector="onBtnTakePhoto:" destination="-1" eventType="touchUpInside" id="wgT-bH-Vfh"/>
                     </connections>
@@ -47,4 +47,8 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="Btn-Cam" width="280" height="280"/>
+        <image name="Btn-Cam_press" width="294" height="294"/>
+    </resources>
 </document>
